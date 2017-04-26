@@ -9,7 +9,7 @@ public class Zoo {
 //		dog.setName("Fredo");
 		System.out.println(dog.getName());
 		flappy.flap();
-		System.out.println(flappy.getName());
+		System.out.println(flappy.getName() + true);
 	}
 
 }
