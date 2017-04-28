@@ -13,7 +13,7 @@ public class Mutability {
 		System.out.println(s1.equalsIgnoreCase("HELLO15"));
 		System.out.println(s1.startsWith("v"));
 		System.out.println(s1.contains("l"));
-		System.out.println(s1.replace("l", "v"));
+		System.out.println(s1.replace('l', 'v'));
 		System.out.print("    hrant     ".trim());
 	}
 }
