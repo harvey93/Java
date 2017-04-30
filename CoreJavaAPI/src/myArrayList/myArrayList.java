@@ -1,5 +1,6 @@
 package myArrayList;
 import java.util.*;
+import java.time.*;
 
 public class myArrayList {
 	
@@ -32,5 +33,16 @@ public class myArrayList {
 		System.out.println(list3);
 		Collections.sort(list3);
 		System.out.println(list3);
+		System.out.println(LocalDate.now());
+		System.out.println(LocalTime.now());
+		System.out.println(LocalDateTime.now());
+		String s1 = new String("java");
+		StringBuilder s2 = new StringBuilder("java");
+		if(s1.equals(s2)){
+			System.out.println("truuuuuue");
+		}
+		System.out.println(s1.substring(2, 2));
+		System.out.println("hello");
+//		System.out.println(list2[0]);
 	}
 }
