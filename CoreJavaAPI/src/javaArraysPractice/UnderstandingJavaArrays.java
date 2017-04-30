@@ -24,6 +24,9 @@ public class UnderstandingJavaArrays {
 		int [][] arrTwoD = {{1,3,4},{0}, {4,5}};
 		System.out.println(Arrays.toString(arrTwoD));
 		Arrays.asList(dogs).forEach(el -> System.out.println(el));
+		for(int[] row : arrTwoD){
+			System.out.println(Arrays.toString(row));
+		}
 	}
 }
 
