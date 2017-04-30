@@ -5,7 +5,7 @@ public class UnderstandingJavaArrays {
 	
 	public static void main(String[] args){
 		int[] numbers1 = new int [3];
-		int[] numbers2 = {1,2,3,4};
+		int[] numbers2 = {5,2,1,4};
 		for(int number : numbers1){
 			System.out.print(number + " ");
 		}
@@ -15,7 +15,11 @@ public class UnderstandingJavaArrays {
 		}
 		System.out.println("");
 		String[] dogs = {"puppy", "fredo", "foster"};
-		System.out.print(Arrays.toString(dogs));
+		System.out.println(Arrays.toString(dogs));
+		System.out.println(Arrays.toString(numbers2));
+		Arrays.sort(numbers2);
+		System.out.println(Arrays.toString(numbers2));
+
 	}
 }
 
