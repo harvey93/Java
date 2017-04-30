@@ -7,9 +7,10 @@ public class myArrayList {
 		ArrayList list1 = new ArrayList();
 		ArrayList<String> list2 = new ArrayList<String>();
 		ArrayList<Integer> list3 = new ArrayList<>();
-		list3.add(5);
-		list3.add(6);
-//		System.out.println(ArrayList.toString(list3));
-		System.out.println(list3);
+		list2.add("Sparrow");
+		list2.add("eagle");
+		list2.add("bluejay");
+		list2.add(1, "pidgeon");
+		System.out.println(list2);
 	}
 }
