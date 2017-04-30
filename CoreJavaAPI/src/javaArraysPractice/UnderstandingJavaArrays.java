@@ -18,8 +18,12 @@ public class UnderstandingJavaArrays {
 		System.out.println(Arrays.toString(dogs));
 		System.out.println(Arrays.toString(numbers2));
 		Arrays.sort(numbers2);
+		Arrays.sort(dogs);
 		System.out.println(Arrays.toString(numbers2));
-
+		System.out.println(Arrays.toString(dogs));
+		int [][] arrTwoD = {{1,3,4},{0}, {4,5}};
+		System.out.println(Arrays.toString(arrTwoD));
+		Arrays.asList(dogs).forEach(el -> System.out.println(el));
 	}
 }
 
