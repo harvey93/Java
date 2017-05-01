@@ -5,6 +5,7 @@ import java.time.*;
 public class myArrayList {
 	
 	public static void main(String[] args){
+		int[] arr = {1,2,3,4};
 		ArrayList list1 = new ArrayList();
 		ArrayList<String> list2 = new ArrayList<String>();
 		ArrayList<Integer> list3 = new ArrayList<>();
@@ -44,5 +45,12 @@ public class myArrayList {
 		System.out.println(s1.substring(2, 2));
 		System.out.println("hello");
 //		System.out.println(list2[0]);
+		char[] c = new char[2];
+		int length = c.length;
+		int size = list3.size();
+		System.out.println(length);
+		arr[3]= 5;
+		System.out.println(arr[3]);
+		
 	}
 }
