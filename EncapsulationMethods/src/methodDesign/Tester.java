@@ -1,16 +1,15 @@
 package methodDesign;
 
 public class Tester {
-	public int number;
-	public String string;
-	
+	private int number;
+	private String string;
 	public static int test(){
 		return 18;
 	}
 	
 	public Tester(int num, String str){
-		number = num;
-		string = str;
+		this.number = num;
+		this.string = str;
 	}
 	
 	public int getNum(){
