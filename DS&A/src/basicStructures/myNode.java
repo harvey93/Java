@@ -13,7 +13,7 @@ public class myNode {
 		return this.next;
 	}
 	
-	public void setNext(){
-		
+	public void setNext(myNode newNode){
+		this.next = newNode;
 	}
 }
