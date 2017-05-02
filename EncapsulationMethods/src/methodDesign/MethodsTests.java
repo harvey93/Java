@@ -10,6 +10,9 @@ public class MethodsTests {
 		System.out.println("hello");
 		System.out.println(test());
 		System.out.println(Tester.test());
+		Tester myTester = new Tester(10, "hello");
+		System.out.println(myTester.getNum());
+		System.out.println(myTester.getStr());
 	}
 	
 }
