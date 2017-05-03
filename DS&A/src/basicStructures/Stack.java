@@ -17,4 +17,10 @@ public class Stack {
 	public Object getCurrent(){
 		return this.current.getVal();
 	}
+	
+	public Object pop(){
+		myNode droppedNode = this.current;
+		this.current = this.current.getPrev();
+		return droppedNode;
+	}
 }
