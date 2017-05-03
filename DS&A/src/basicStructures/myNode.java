@@ -1,12 +1,14 @@
 package basicStructures;
 
 public class myNode {
-	private int val;
+	private Object val;
 	private myNode next;
+	private myNode prev;
 	
-	public myNode(int val){
+	public myNode(Object val){
 		this.val = val;
 		this.next = null;
+		this.prev = null;
 	}
 	
 	public myNode getNext(){
@@ -17,7 +19,15 @@ public class myNode {
 		this.next = newNode;
 	}
 	
-	public int getVal(){
+	public myNode getPrev(){
+		return this.prev;
+	}
+	
+	public void setPrev(myNode newNode){
+		this.prev = newNode;
+	}
+	
+	public Object getVal(){
 		return this.val;
 	}
 }
