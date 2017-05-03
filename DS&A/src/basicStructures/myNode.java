@@ -16,4 +16,8 @@ public class myNode {
 	public void setNext(myNode newNode){
 		this.next = newNode;
 	}
+	
+	public int getVal(){
+		return this.val;
+	}
 }
