@@ -27,5 +27,9 @@ public class TestClass {
 		myArray.add(0);
 		myArray.add(33);
 		System.out.println(myArray.toString());
+		myArray.remove();
+		myArray.remove();
+		System.out.println(myArray.toString());
+
 	}
 }

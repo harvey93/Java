@@ -31,6 +31,13 @@ public class DynamicArray {
 		this.capacity = newStore.length;
 	}
 	
+	public Object remove(){
+		this.index--;
+		Object val = this.store[this.index];
+		this.store[this.index] = null;
+		return val;
+	}
+	
 	
 	
 	public String toString(){
