@@ -15,7 +15,6 @@ public class IsUnique {
 			}else{
 				myMap.put(el, 1);
 			}
-//			myMap.put(myArray[i], 1);
 		}
 		System.out.println(myMap.toString());
 		return myMap.size() == myArray.length ? true : false;
