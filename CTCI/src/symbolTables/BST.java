@@ -28,6 +28,16 @@ public class BST {
 		
 	}
 	
+	public int size(){
+		return size(root);
+	}
+	
+	private int size(BSTNode x){
+		if(x == null) return 0;
+		return x.getCount();
+	}
+
+	
 	private BSTNode put(BSTNode x, char key, int val) {
 		if(x == null) return new BSTNode(key, val);
 		if (key < x.getKey()){

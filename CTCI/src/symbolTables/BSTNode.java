@@ -6,6 +6,7 @@ public class BSTNode {
 	private char key;
 	private int val;
 	private BSTNode left, right;
+	private int count;
 	
 	public BSTNode(char key, int val){
 		this.key = key;
@@ -40,5 +41,16 @@ public class BSTNode {
 	public char getKey(){
 		return this.key;
 	}
+
+
+	public int getCount() {
+		return count;
+	}
+
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+	
 	
 }
