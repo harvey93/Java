@@ -2,7 +2,7 @@ package symbolTables;
 
 public class Test {
 	public static void main(String[] args) {
-		if('S' > 'A') System.out.println(true);
-		
+		BST myBST = new BST();
+		myBST.put('A', 5);
 	}
 }
