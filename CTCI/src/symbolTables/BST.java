@@ -21,6 +21,13 @@ public class BST {
 		root = put(root, key, val);
 	}
 	
+	public char floor(char key){
+		BSTNode x = floor(root, key);
+		if(x == null) return '~';
+		return x.getKey();
+		
+	}
+	
 	private BSTNode put(BSTNode x, char key, int val) {
 		if(x == null) return new BSTNode(key, val);
 		if (key < x.getKey()){
@@ -31,5 +38,21 @@ public class BST {
 			x.setVal(val);
 		}
 		return x;
+	}
+	
+	private BSTNode floor(BSTNode x, char key){
+		if(x == null) return null;
+		if (key == x.getKey()) {
+			return x;
+		} else if (key < x.getKey()) {
+			return floor(x.getLeft(), key);
+		} else {
+			BSTNode t = floor(x.getRight(), key);
+			if(t != null){ 
+				return t ; 
+			} else {
+				return x;
+			}
+		}
 	}
 }
