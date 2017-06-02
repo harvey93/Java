@@ -17,6 +17,10 @@ public class BST {
 		return -1;
 	}
 	
+	public int rank(char key) {
+		return rank(key, root);
+	}
+	
 	public void put(char key, int val){
 		root = put(root, key, val);
 	}
@@ -36,6 +40,17 @@ public class BST {
 		if(x == null) return 0;
 		return x.getCount();
 	}
+	
+	private int rank(char key, BSTNode x){
+		if (x == null) return 0;
+		if (key < x.getKey()) {
+			return rank(key, x.getLeft());
+		} else if ( key > x.getKey()) {
+			return rank(key, x.getRight());
+		} else {
+			return size(x.getLeft());
+		}
+	}
 
 	
 	private BSTNode put(BSTNode x, char key, int val) {
@@ -47,6 +62,7 @@ public class BST {
 		} else {
 			x.setVal(val);
 		}
+		x.setCount(1 + size(x.getLeft()) + size(x.getRight()));
 		return x;
 	}
 	
